@@ -1,0 +1,18 @@
+CREATE CUSTOMER AND ACCOUNT
+
+curl -X POST -H "Content-type: application/json" -d "{\"first_name\" : \"Joe\", \"last_name\" : \"Rao\", \"customer_user_id\" : \"joe1234\", \"password\" : \"hello1234\",  \"is_admin\" : \"0\", \"account_name\" : \"AllSavings\", \"account_type\" : \"Savings\", \"pin\" : \"1234\"}" "localhost:5000/create-customer"   
+
+
+GET CUSTOMER INFO
+
+curl -X GET -H "Content-type: application/json" -d "{\"customer_user_id\" : \"joe1234\", \"password\" : \"hello1234\"}" "localhost:5000/get-customer-info"
+
+
+DEPOSIT AMOUNT
+
+curl -X POST -H "Content-type: application/json" -d "{\"customer_user_id\" : \"joe1234\", \"password\" : \"hello1234\", \"amount\" : \"200\"}" "localhost:5000/deposit-funds"
+
+
+WITHDRAW AMOUNT
+
+curl -X POST -H "Content-type: application/json" -d "{\"customer_user_id\" : \"joe1234\", \"password\" : \"hello1234\", \"amount\" : \"200\"}" "localhost:5000/withdraw-funds"
