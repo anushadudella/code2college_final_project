@@ -22,4 +22,4 @@ Running the application
 1) Copy the app.py file into the virtual environment folder called "virtualenv_flaskmysql" 
 2) Type the command "python app.py"
 3) The application should be running under the default port of 5000
-4) Now from the 
+4) Run the commands from the file "CommandsforRunningApplication" in the same order as in the file
